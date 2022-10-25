@@ -1,0 +1,63 @@
+.navigation-wrapper {
+  padding: 12px 32px;
+
+  @media (max-width: 640px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.navigation-wrapper > .pull-right {
+  float: none;
+}
+
+.navigation-wrapper > .d-flex {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+.navigation-wrapper > .library-name {
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-right: 0;
+}
+
+.library-name > .library-name--link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-left: 0;
+
+  &::before {
+    display: none;
+  }
+}
+
+.library-version {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.7);
+
+  position: relative;
+  top: -4px;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: auto;
+  align-items: flex-end;
+  min-height: 36px;
+  z-index: 0;
+  margin-left: -4px;
+  margin-bottom: -8px;
+}
+
+#leftToggler, #searchBar {
+  display: none;
+}

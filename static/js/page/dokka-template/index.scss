@@ -1,3 +1,7 @@
+:root {
+    --top-navigation-height: 141px;
+}
+
 #main {
     max-width: 100%;
     display: block;
@@ -9,6 +13,10 @@
     max-width: calc(100% - 280px);
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 759px) {
+        padding-left: 6px;
+    }
 }
 
 @media screen and (max-width: 759px) {
@@ -28,5 +36,11 @@
         content: "\2630";
         padding-right: 0.5em;
         margin-left: -0.5em;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    #sideMenu {
+        padding-left: 16px;
     }
 }

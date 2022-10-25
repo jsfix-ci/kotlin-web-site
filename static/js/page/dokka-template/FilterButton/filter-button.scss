@@ -1,0 +1,65 @@
+.ktl-dokka-filter-button {
+  margin-left: 4px;
+  margin-bottom: 8px;
+
+  &:not([data-active]) {
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    &:hover {
+      outline: 1px solid rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  &_common {
+    &[data-active] {
+      color: #19191C;
+      background-color: rgb(186, 186, 187);
+
+      &:hover {
+        background-color: rgba(186, 186, 187, .7);
+      }
+    }
+  }
+
+  &_concurrent {
+    &[data-active] {
+      color: #19191C;
+      background-color: rgb(186, 186, 187);
+
+      &:hover {
+        background-color: rgba(186, 186, 187, .7);
+      }
+    }
+  }
+
+  &_js {
+    &[data-active] {
+      color: #19191C;
+      background-color: rgb(77, 187, 95);
+      &:hover {
+        background-color: rgba(77, 187, 95, .7);
+      }
+    }
+  }
+
+  &_jvm {
+    &[data-active] {
+      color: #19191C;
+      background-color: rgb(255, 199, 0);
+      &:hover {
+        background-color: rgba(255, 199, 0, .7);
+      }
+    }
+  }
+
+  &_native {
+    &[data-active] {
+      color: #19191C;
+      background-color: rgb(186, 186, 187);
+      &:hover {
+        background-color: rgba(186, 186, 187, .7);
+      }
+    }
+  }
+}
