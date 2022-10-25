@@ -1,5 +1,5 @@
 :root {
-    --top-navigation-height: 141px;
+    --top-navigation-height: 129px;
 }
 
 #main {
@@ -8,22 +8,18 @@
     flex: 1;
 }
 
-#ktl-main {
+#container > #ktl-main {
     width: 100%;
     max-width: calc(100% - 280px);
     display: flex;
     flex-direction: column;
 
     @media screen and (max-width: 759px) {
-        padding-left: 6px;
+        max-width: 100%;
     }
 }
 
 @media screen and (max-width: 759px) {
-    #ktl-main {
-        max-width: 100%;
-    }
-
     #leftColumn.open ~ #ktl-main #searchBar {
         display: none;
     }
@@ -36,6 +32,16 @@
         content: "\2630";
         padding-right: 0.5em;
         margin-left: -0.5em;
+    }
+
+}
+
+#main {
+    @media screen and (max-width: 759px) {
+        padding-left: 24px;
+    }
+    @media (max-width: 640px) {
+        padding-left: 8px;
     }
 }
 
