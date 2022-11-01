@@ -1,7 +1,12 @@
 .navigation-wrapper {
   padding: 12px 32px;
+  align-items: center;
 
-  @media (max-width: 640px) {
+  &, #pages-search {
+    background: none #1b1b1b;
+  }
+
+  @media (max-width: 759px) {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -16,6 +21,7 @@
   display: flex;
   flex: 1 1 auto;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .navigation-wrapper > .library-name {
@@ -53,12 +59,29 @@
   flex-wrap: wrap;
   align-self: auto;
   align-items: flex-end;
-  min-height: 36px;
+  min-height: initial;
   z-index: 0;
-  margin-left: -4px;
   margin-bottom: -8px;
+  margin-left: -4px;
 }
 
-#leftToggler, #searchBar {
-  display: none;
+@media(min-width: 760px) {
+  #searchBar {
+    display: none;
+  }
+}
+
+#leftToggler {
+  margin-right: 0;
+}
+
+
+.ktl-dokka-navigation-logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: 760px) {
+    display: none;
+  }
 }

@@ -4,6 +4,7 @@
 
 #main {
     max-width: 100%;
+    box-sizing: border-box;
     display: block;
     flex: 1;
 }
@@ -40,7 +41,7 @@
     @media screen and (max-width: 759px) {
         padding-left: 24px;
     }
-    @media (max-width: 640px) {
+    @media (max-width: 759px) {
         padding-left: 8px;
     }
 }

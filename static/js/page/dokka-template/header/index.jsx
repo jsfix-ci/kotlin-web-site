@@ -7,7 +7,7 @@ import './header.scss';
 
 const Header = (props) => {
 	return (
-		<GlobalHeader { ... props } className={cn(props.className, 'ktl-dokka-header')} searchConfig={searchConfig} noScrollClassName={'_no-scroll'} />
+		<GlobalHeader { ... props } className={cn(props.className, 'ktl-dokka-header')} searchConfig={searchConfig} noScrollClassName={'_no-scroll'} hasBorder={false}/>
 	);
 }
 
