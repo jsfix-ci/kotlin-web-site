@@ -2,13 +2,6 @@
     --top-navigation-height: 129px;
 }
 
-#main {
-    max-width: 100%;
-    box-sizing: border-box;
-    display: block;
-    flex: 1;
-}
-
 #container > #ktl-main {
     width: 100%;
     max-width: calc(100% - 280px);
@@ -38,9 +31,15 @@
 }
 
 #main {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+    flex: 1;
+
     @media screen and (max-width: 759px) {
         padding-left: 24px;
     }
+
     @media (max-width: 759px) {
         padding-left: 8px;
     }
@@ -50,4 +49,14 @@
     #sideMenu {
         padding-left: 16px;
     }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#container, #container > #ktl-main {
+    flex: 1 1 auto;
+    max-height: unset;
 }

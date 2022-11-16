@@ -161,7 +161,8 @@ module.exports = (params = {}) => {
 
       new webpack.DefinePlugin({
         indexName: JSON.stringify(indexName),
-        'process.env.NODE_ENV': JSON.stringify(env)
+        'process.env.NODE_ENV': JSON.stringify(env),
+        'process.env.ALGOLIA_INDEX_NAME': JSON.stringify(process.env.ALGOLIA_INDEX_NAME)
       })
     ].filter(Boolean),
 
